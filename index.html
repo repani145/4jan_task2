@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .d1>i,.d1>p{
+            position: absolute;
+        }
+        .d12{
+            left:32px;
+            font-size: 15px;
+            top: -2px;
+        }
+        .d13{
+            left: 410px;
+            top: 10px;
+        }
+        .d14{
+            left: 445px;
+            font-size: 15px;
+            top: -2px;
+        }
+        .d1{
+            background-color: darkgrey;
+            width: 500px;
+            height: 25px;
+        }
+        .d21,.d22,.d23{
+            position: absolute;
+        }
+        .d2{
+            background-color: blue;
+            width: 500px;
+            height: 50px;
+        }
+        .d21{
+            left: 20px;
+            top: 45px;
+        }
+        .d22{
+            left: 230px;
+        }
+        .d23{
+            left: 470px;
+            top: 45px;
+        }
+        .d31,.d32{
+            position: absolute;
+        }
+        .d31{
+            font-size: 30px;
+            top: 245px;
+            left: 210px;
+            z-index: 1;
+            text-shadow: 1px 1px 3px black;
+            color: rgb(255, 0, 0);
+        }
+        .d41,.d42,.d43{
+            position: absolute;
+        }
+        .d41{
+            top: 370px;
+        }
+        .d42{
+            font-size: 200%;
+            left: 100px;
+            top: 330px;
+            
+        }
+        .d43{
+            left: 450px;
+            top: 370px;
+            width: 300px;
+        }
+        .d44{
+            border: 1px solid rgb(0, 0, 0);
+            margin-top: 320px;
+            width: 470px;
+            margin-left: 30px;
+        }
+        .d51,.d52,.d53,.d54{
+            position: relative;
+        }
+        .d51{
+            top: 20px;
+        }
+        .d52{
+            font-size: 200%;
+            left: 100px;
+            top: -40px;
+        }
+        .d53{
+            top: -110px;
+            left: 440px;
+        }
+        .d54{
+            border: 1px solid black;
+            width: 470px;
+            top: -110px;
+            left: 30px;
+        }
+        .d61,.d62,.d63,.d64{
+            position: relative;
+        }
+        .d61{
+            top: -100px;
+        }
+        .d62{
+            font-size: 200%;
+            left: 100px;
+            top: -170px;
+        }
+        .d63{
+            top: -230px;
+            left: 440px;
+        }
+        .d64{
+            border: 1px solid black;
+            width: 470px;
+            left: 30px;
+            top: -240px;
+        }
+        .d71,.d72,.d73{
+            position: absolute;
+            top: 600px;
+        }
+        .d7{
+            background-color: chartreuse;
+            width: 500px;
+            height: 50px;
+            margin-top: -200px;
+            font-size: 150%; 
+        }
+        .d71{
+            left: 80px;
+        }
+        .d72{left: 250px;
+            color: white;
+            top: 570px;
+            font-size: 170%;
+            text-shadow: 1px 1px 10px white;
+        }
+        .d73{
+            left: 345px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <i class="d11 fa fa-signal" style="font-size:20px"></i>
+        <p class="d12">SivaG</p>
+        <i class="d13 fa fa-wifi" style="font-size:20px"></i>
+        <p class="d14">24:00MM</p>
+    </div>
+    <div class="d2">
+        <a class="d21" href=""><i class="fa fa-reorder" style="font-size:30px;color:chartreuse"></i></a>
+        <p class="d22"><b>My account</b></p>
+        <a class="d23"><i class="fa fa-phone-square" style="font-size:30px;color:chartreuse"></i></a>
+    </div>
+    <div class="d3">
+        <p class="d31"><i><b>SivaaG</b></i></p>
+        <img class="d32" width="500px" height="250px" src="data:image/jpeg;base64,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" />
+    </div>
+    <div class="d4">
+        <i class="d41 fa fa-id-badge" style="font-size:30px;color:chartreuse"></i>
+        <p class="d42">+91 9090909090</p>
+        <!-- <form class="d42"><input type="text" placeholder="+91 9090909090"/></form> -->
+        <i class="d43 fa fa-eyedropper" style="font-size:30px;color:black"></i>
+        <p class="d44"></p>
+    </div>
+    <div class="d5">
+        <i class="d51 fa fa-envelope-open" style="font-size:30px;color:chartreuse"></i>
+        <p class="d52">yes_boss@email.com</p>
+        <i class="d53 fa fa-eyedropper" style="font-size:30px;color:black"></i>
+        <p class="d54"></p>
+    </div>
+    <div class="d6">
+        <i class="d61 fa fa-key" style="font-size:30px;color:chartreuse"></i>
+        <p class="d62">***super_star***</p>
+        <i class="d63 fa fa-eyedropper" style="font-size:30px;color:black"></i>
+        <p class="d64"></p>
+    </div>
+    <div class="d7">
+        <p class="d71">LOGOUT</p>
+        <P class="d72">|</P>
+        <p class="d73">SAVE</p>
+    </div>
+    <div class="d8" style="background-color: black;width: 500px;">
+        <i class="fa fa-caret-square-o-left" style="font-size:30px;color:white ; margin-left: 10px;"></i>
+        <i class="fa fa-home" style="font-size:30px;color:white;margin-left: 190px;"></i>
+        <i class="fa fa-window-maximize" style="font-size:30px;color:white;margin-left: 190px;"></i>
+    </div>
+</body>
+</html>
